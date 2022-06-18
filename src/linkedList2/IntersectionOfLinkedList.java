@@ -68,6 +68,9 @@ public class IntersectionOfLinkedList extends LL {
         Space Complexity - O(1)
     */
     public static Node method3CountingLength(Node h1 , Node h2){
+        if(h1 == null || h2 == null){
+            return null;
+        }
         Node temp1 = h1 , temp2 = h2;
         int count1 = 0 , count2 = 0;
         //Calculating the length of both the lists.
@@ -115,6 +118,9 @@ public class IntersectionOfLinkedList extends LL {
         Space Complexity - O(1)
     */
     public static Node optimalSolution(Node h1 , Node h2){
+        if(h1 == null || h2 == null){
+            return null;
+        }
         Node temp1 = h1;
         Node temp2 = h2;
         while(temp1 != temp2){
